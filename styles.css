@@ -68,6 +68,9 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .favorites-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid var(--line);
   background: rgba(255,255,255,.75);
   padding: 10px 15px;
@@ -75,7 +78,7 @@ a { color: inherit; }
   cursor: pointer;
   box-shadow: 0 8px 30px rgba(63, 40, 84, .06);
 }
-.favorites-pill span { color: var(--purple); font-size: 20px; vertical-align: -1px; }
+.favorites-pill span { color: var(--purple); font-size: 20px; }
 .favorites-pill b { display: inline-grid; place-items: center; min-width: 22px; height: 22px; border-radius: 50%; background: var(--purple); color: white; font-size: 12px; }
 
 .hero {
@@ -808,9 +811,10 @@ dialog.fallback-open { display:block; position:fixed; inset:0; z-index:100; marg
   .template-meta strong { font-size: clamp(15px, 4.6vw, 18px); }
   .template-meta small { font-size: clamp(10px, 2.9vw, 12px); }
 
-  .contact-card { grid-template-columns: 1fr; gap: 18px; padding: 28px 22px; text-align: center; }
-  .contact-card img { width: 132px; margin: 0 auto; }
-  .contact-card h2 { font-size: 28px; }
+  .contact-card { grid-template-columns: 1fr; gap: 14px; padding: 20px 18px; text-align: center; }
+  .contact-card img { width: 110px; margin: 4px auto 0; }
+  .contact-card h2 { font-size: 22px; margin-bottom: 6px; }
+  .contact-card p:not(.eyebrow) { line-height: 1.65; font-size: 13px; }
 
   .template-dialog { width: calc(100% - 20px); }
   .dialog-content { grid-template-columns: 1fr; min-height: 0; }
