@@ -1,4 +1,5 @@
 :root {
+  --serif: "Noto Serif SC", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
   --ink: #211c28;
   --muted: #756d7f;
   --purple: #8c6bb8;
@@ -61,7 +62,7 @@ a { color: inherit; }
 }
 .brand-mini img { width: 98px; height: 44px; object-fit: contain; }
 .brand-name {
-  font-family: "Songti SC", "STSong", "宋体", "SimSun", "Noto Serif SC", serif;
+  font-family: var(--serif);
   font-size: 18px;
   letter-spacing: .04em;
   color: var(--ink);
@@ -111,7 +112,7 @@ a { color: inherit; }
 }
 .hero h1 {
   margin: 0;
-  font-family: "Songti SC", "STSong", "宋体", "SimSun", "Noto Serif SC", serif;
+  font-family: var(--serif);
   font-size: clamp(42px, 7vw, 78px);
   line-height: 1.18;
   font-weight: 500;
@@ -152,7 +153,7 @@ a { color: inherit; }
 }
 .section-heading h2 {
   margin: 0;
-  font-family: "Songti SC", "STSong", "宋体", "SimSun", "Noto Serif SC", serif;
+  font-family: var(--serif);
   font-size: clamp(30px, 4vw, 48px);
   font-weight: 500;
 }
@@ -461,7 +462,7 @@ form { display: grid; gap: 20px; }
   color: white;
   box-shadow: var(--shadow);
 }
-.contact-card h2 { margin: 0 0 12px; font-family: "Songti SC", "宋体", "SimSun", serif; font-size: 38px; font-weight: 500; }
+.contact-card h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 38px; font-weight: 500; }
 .contact-card p:not(.eyebrow) { color: rgba(255,255,255,.72); line-height: 1.8; }
 .contact-card img { width: 180px; border-radius: 18px; background: white; padding: 8px; }
 
@@ -547,7 +548,7 @@ dialog::backdrop {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
-.favorites-header h2 { margin: 0; font-family: "Songti SC", "宋体", "SimSun", serif; font-size: 34px; font-weight: 500; }
+.favorites-header h2 { margin: 0; font-family: var(--serif); font-size: 34px; font-weight: 500; }
 .favorites-list { padding: 20px; display: grid; gap: 12px; }
 .favorite-row {
   display: grid;
@@ -583,7 +584,7 @@ dialog::backdrop {
   color: var(--purple-deep);
   font-size: 30px;
 }
-.success-content h2 { margin: 0 0 10px; font-family: "Songti SC", "宋体", "SimSun", serif; font-size: 36px; font-weight: 500; }
+.success-content h2 { margin: 0 0 10px; font-family: var(--serif); font-size: 36px; font-weight: 500; }
 .success-content > p:not(.eyebrow,.small-print) { color: var(--muted); line-height: 1.7; }
 .success-content pre {
   white-space: pre-wrap;
